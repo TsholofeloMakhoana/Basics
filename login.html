@@ -1,46 +1,37 @@
-<html>
-    <head>
-        <title>Login Page</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="index.js"></script>
-    </head>
-    <body>
-        
-        <div class="main-box">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
 
+<div class="login">
+    <form name='form-login'>
 
-            <h1>Login Here</h1>
+        <h1>SIGN IN</h1>
 
-            <form>
-                <label for="username">Username</label>
-                <input class="name" type="text" name="username" placeholder="Email or Phone">
+        <label for="userName">Email</label>
+        <input type="email" id="userName" placeholder="Username" required>
 
-                <label for="password">Password</label>
-                <input class="name
-                " type="password" name="password" placeholder="Enter Password">
+        <label for="userPw">Password</label>
+        <input type="password" id= "userPw" placeholder="Password" required>
 
-                <input  type="submit" value="Login">
-              
-                <div class ="social meadia">
-                <button class="gbtn"><i class="fa fa-google fa-fw">Google</i></button>
-                <button class="btn"><i class="fa fa-facebook">Facebook</i></button>
-            </div>
-                <!-- <div class="container">
-                    <form action="/action_page.php">
-                      <div class="row">
-                        <div class="col">
-
-                            
-                        
-                        </div> -->
-
-                <!-- <a href="#">Lost your password?</a> <br> -->
-                <!-- <a href="#">Don't have an account?</a> -->
-
-            </form>
-
+        <div id="remember">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                   style="display: inline-block;">
+            <label>Remember me</label> |
+			 <a href="Index.html">  Register here</a>
         </div>
+    
+        <input id= "login_btn" type="submit" value="Login" onclick="check()">
 
-    </body>
+    </form>
+</div>
+    <script src="script.js"></script>
+</body>
 </html>
